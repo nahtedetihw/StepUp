@@ -6,4 +6,4 @@ Description: Control the steps of your volume!
 Maintainer: Ethan Whited
 Author: Ethan Whited
 Section: Tweaks
-Depends: mobilesubstrate
+Depends: mobilesubstrate, ws.hbang.common
