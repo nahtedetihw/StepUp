@@ -1,6 +1,6 @@
 Package: com.nahtedetihw.stepup
 Name: StepUp
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Description: Control the steps of your volume!
 Maintainer: Ethan Whited

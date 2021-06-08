@@ -16,10 +16,15 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = StepUp
 
-StepUp_FILES = Tweak.xm
-StepUp_CFLAGS = -fobjc-arc
+$(TWEAK_NAME)_FILES = Tweak.xm
+$(TWEAK_NAME)_CFLAGS = -fobjc-arc
+$(TWEAK_NAME)_EXTRA_FRAMEWORKS += Cephei
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+
+SUBPROJECTS += stepupprefs
+
+include $(THEOS_MAKE_PATH)/aggregate.mk
 
 after-install::
 	install.exec "killall -9 Preferences && killall -9 SpringBoard"
